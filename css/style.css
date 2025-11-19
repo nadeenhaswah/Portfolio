@@ -1,0 +1,1053 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0D7777;
+    
+}
+*{
+    font-family: "Cairo", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style-type: none;
+}
+nav.navbar {
+    position: fixed;
+    padding:5px 5%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    /* background: rgba(0, 0, 0, .05);  */
+    background-color: #fff;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Cairo", sans-serif;;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a li{
+    text-decoration: none;
+    cursor: pointer;
+}
+.text-main-color{
+    color: #0D7777;
+}
+.bg-main-color{
+    background-color: #0D7777;
+}
+.main-font{
+    font-family: "Cairo", sans-serif;
+}
+.bold{
+    font-weight: 900;
+}
+.light{
+    font-weight: 300;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #0D7777;
+    text-decoration: underline;
+    transition: .5s;
+    color: #0D7777;
+}
+.nav-item:hover::after{
+    width: 100%;
+}
+.contactMe,.cv{
+    transition: .5s;
+}
+.contactMe:hover,.cv:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+section:not(#footer){
+    padding:5px 5%;
+    margin-bottom: 50px;
+    padding-top: 80px;
+    scroll-snap-type: mandatory;
+}
+
+/* start home section  */
+section#home{
+    position: relative;
+    /* background-color: red; */
+}
+section#home img.homeShape1{
+    position: absolute;
+    left: 0;
+    z-index: -1;    
+    height: 90%;
+}
+section#home img.homeShape2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    height: 30%;
+}
+section#home img.nadeenPic{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+div.homeSection{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 100px;
+}
+div.homeSection .content{
+    width: 50%;
+}
+div.homeSection .content .name{
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+    
+}
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+}
+div.homeSection .content .position{
+    width: 100%;
+    font-size: 3.4rem;
+    /* animation: typing 1.6s steps(28) infinite alternate-reverse; */ 
+    overflow: hidden;
+}
+div.homeSection .content p.me{
+    width: 90%;
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+div.homeSection .content .btns {
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+    justify-content: start;
+}
+div.homeSection .content .btns a{
+    border-radius: 30px;
+    padding: 9px 15px;
+    font-size: 20px;
+    text-align: center;
+}
+div.homeSection .content .btns a.cv{
+    background-color: #0D7777;
+    color: white;
+}
+div.homeSection .content .btns a.contactMe{
+    border: 1px solid #0D7777;
+    color: #0D7777;
+}
+div.homeSection .img{
+    width: 50%;
+}
+div.homeSection .img .nadeenPic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+div.homeSection .img .hidden{
+    width: 90%;
+    display: none;
+}
+/* Extra Small (Mobile) - max 575px */
+@media (max-width: 575px) {
+    section#home img.homeShape2{
+        display: none;
+    }
+    div.homeSection .content{
+    width: 100%;
+    }
+    div.homeSection .img{
+    width: 100%;
+    }
+    div.homeSection .content .name{
+    width: 90%;
+    }
+    div.homeSection .content .position{
+    width: 90%;
+    }
+    div.homeSection .content .btns a{
+    border-radius: 30px;
+    padding: 6px 12px;
+    font-size: 17px;
+    text-align: center;
+    }
+    div.homeSection .img img{
+        display: none;
+    }
+    div.homeSection .img .hidden{
+    display: block;
+    }
+
+    section#home img.homeShape1{  
+    height: 100vh;
+}
+section#home img.homeShape2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    height: 30vh;
+}
+}
+
+/* Small Devices (Mobile landscape / Small tablets) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    div.homeSection .content{
+    width: 100%;
+    }
+    div.homeSection .img{
+    width: 100%;
+    }
+    div.homeSection .img img{
+        display: none;
+    }
+    section#home img.homeShape1{  
+    height: 100vh;
+    }
+    div.homeSection .img .hidden{
+    display: block;
+    width: 70%;
+    }
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large Devices (Laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra Large Devices (Large screens) - 1200px and up */
+@media (min-width: 1200px) {
+
+}
+/* end home section  */
+
+
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+
+
+/* start about me section  */
+section#about{
+    position: relative;
+}
+section#about h1{
+    width: 90%;
+}
+section#about h3{
+    font-size: 17px;
+}
+section#about .star1{
+    position: absolute;
+    right: 0;
+    top: 100 ;
+    z-index: -1;
+}
+section#about .star2{
+    position: absolute;
+    left: 0;
+    top: 200;
+    z-index: -1;
+}
+section#about  p.me{
+    margin-top: 40px;
+    font-size: 1.3rem;
+    width: 70%;
+}
+section#about .skills{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+section#about .skills .skillsContainer{
+    width: 25%;
+}
+section#about .skills .skill{
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border-bottom: 3px solid #0D7777;
+    padding: 7px 20px;
+
+}
+section#about .skills .skillsContainer .specificSkills{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    /* align-items: start; */
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+}
+section#about .skills .skillsContainer .specificSkills li {
+    font-weight: 700;
+}
+section#about .skills .skillsContainer .specificSkills li span{
+    color: #0D7777;
+    font-weight: 900;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    padding: 7px;
+    text-align: center;
+    margin-right: 20px;
+}
+/* Extra Small (Mobile) - max 575px */
+@media (max-width: 575px) {
+    section#about .skills .skillsContainer{
+    width: 100%;
+    }
+    section#about .star1{
+        display: none;
+    }
+}
+
+/* Small Devices (Mobile landscape / Small tablets) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    section#about .skills .skillsContainer{
+    width: 45%;
+    }
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large Devices (Laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra Large Devices (Large screens) - 1200px and up */
+@media (min-width: 1200px) {
+
+}
+
+/* end about me section  */
+
+
+
+
+/* start experience  */
+section#experience h3 {
+    font-size: 17px;
+}
+section#experience h3, section#experience h1{
+    text-align: center;
+}
+
+section#experience .education-experience{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+section#experience .education-experience div{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section#experience .education-experience div h4{
+        letter-spacing: 2px;
+        font-weight: 900;
+        font-size: 1.4rem;
+    }
+
+section#experience .education-experience div .containerE{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+section#experience .education-experience div .containerE .box{
+    border-radius: 30px;
+    background-color: #D9D9D9;
+    padding: 7px 15px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 15px;
+    transition: .5s;
+    /* width: auto; */
+}
+section#experience .education-experience div .containerE .box:hover{
+    background-color: #0D7777;
+}
+section#experience .education-experience div .containerE .box:hover span.icon{
+    background-color: #fff;
+    color: #0D7777;
+}
+section#experience .education-experience div .containerE .box span.icon{
+    background-color: #0D7777;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 15%;
+}
+section#experience .education-experience div .containerE .box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+    width: 85%;
+    /* width: auto; */
+}
+section#experience .education-experience div .containerE .box div .title{
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+section#experience .education-experience div .containerE .box:hover div .title{
+    color: #fff;
+}
+section#experience .education-experience div .containerE .box div .desc{
+    color: gray;
+    font-size: 14px;
+}
+section#experience .education-experience div .containerE .box:hover div .desc{
+    color: #fff;
+}
+section#experience .education-experience div .containerE .box:hover div  .year{
+    color: #fff;
+}
+section#experience .education-experience div .containerE .box div .year{
+    font-weight: bold;
+    color: gray;
+}
+
+/* Extra Small (Mobile) - max 575px */
+@media (max-width: 575px) {
+    section#experience .education-experience div{
+        width: 100%;
+    }
+    section#experience .education-experience div .containerE .box{
+        width: 90%;
+    }
+    
+}
+
+/* Small Devices (Mobile landscape / Small tablets) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    section#experience .education-experience div{
+        width: 100%;
+    }
+    section#experience .education-experience div .containerE .box{
+        width: 90%;
+    }
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    section#experience .education-experience div .containerE .box{
+        width: 90%;
+    }
+}
+
+/* Large Devices (Laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra Large Devices (Large screens) - 1200px and up */
+@media (min-width: 1200px) {
+
+}
+
+/* end experience  */
+
+
+/* start Services */
+section#services{
+    position: relative;
+    padding-bottom: 150px;
+}
+section#services .shape1{
+    position: absolute;
+    right: 0;
+    top: 100;
+    z-index: -1;
+    height: 160px;
+    width: 160px;
+}
+section#services .shape2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 160px;
+    width: 160px;
+}
+section#services h3 {
+    font-size: 17px;
+}
+section#services .servicesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+section#services .servicesContainer .service{
+    width: 25%;
+    border-top:1px solid #0D7777;
+    border-right:1px solid #0D7777;
+    border-left:1px solid #0D7777;
+    border-bottom:4px solid #0D7777;
+    border-radius: 30px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+section#services .servicesContainer .service:hover{
+    background-color: #0D7777;
+}
+section#services .servicesContainer .service:hover span{
+    color: #fff;
+}
+section#services .servicesContainer .service span{
+    color: #0D7777;
+    font-size: 3.5rem;
+}
+section#services .servicesContainer .service:hover .title{
+    color: #fff;
+}
+section#services .servicesContainer .service .title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 3;
+}
+section#services .servicesContainer .service:hover .desc{
+    color: #fff;
+}
+section#services .servicesContainer .service .desc{
+    text-align: center;
+}
+
+
+
+/* Extra Small (Mobile) - max 575px */
+@media (max-width: 575px) {
+    section#services .servicesContainer .service{
+        width: 90%;
+    }
+}
+
+/* Small Devices (Mobile landscape / Small tablets) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    section#services .servicesContainer .service{
+        width: 40%;
+    }
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large Devices (Laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra Large Devices (Large screens) - 1200px and up */
+@media (min-width: 1200px) {
+
+}
+
+
+/* end Services */
+
+
+/* start projects */
+
+section#projects h1 {
+    font-size: 17px;
+    color: #0D7777;
+    text-align: center;
+}
+section#projects h3{
+    text-align: center;
+}
+section#projects .projectsContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.projectsContainer .project{
+    width: 31%;
+    height: 480px;
+    /* border-top: 1px solid #0D7777;
+    border-left: 1px solid #0D7777;
+    border-right: 1px solid #0D7777;
+    border-bottom: 5px solid #0D7777; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    padding: 5px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectsContainer .project:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    width: 32%;
+}
+section#projects .projectsContainer .project img{
+    width: 90%;
+    height: 40%;
+    border-radius: 30px;
+}
+section#projects  .project .content{
+    padding: 10px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+section#projects  .project .content .title{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+section#projects  .project  a{
+    background-color: #0D7777;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px 9px;
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+    width: 50%;
+    text-align: center;
+    transition: .5s;
+}
+section#projects  .project  a:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+section#projects  .project .content .langs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+section#projects  .project .content .langs span{
+    border: 1px solid #0D7777;
+    width: 70px;
+    width: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 7px 10px;
+    color: #0D7777;
+}
+
+
+
+/* Extra Small (Mobile) - max 575px */
+@media (max-width: 575px) {
+    section#projects .projectsContainer .project{
+    width: 100%;
+}
+section#projects  .project  a{
+    width: 40%;
+}
+}
+
+/* Small Devices (Mobile landscape / Small tablets) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+        section#projects .projectsContainer .project{
+    width: 100%;
+}
+section#projects  .project  a{
+    width: 40%;
+}
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large Devices (Laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra Large Devices (Large screens) - 1200px and up */
+@media (min-width: 1200px) {
+
+}
+
+/* end projects */
+
+
+
+
+/* start contact  */
+section#contact{
+    padding-top: 70px;
+}
+section#contact h3 {
+    font-size: 17px;
+}
+section#contact h3, section#contact h1{
+    text-align: center;
+}
+section#contact .containerC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+}
+section#contact .containerC .section{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: end;
+}
+
+
+section#contact .containerC .sec1 img{
+        width: 320px;
+        height: 320px;
+    }
+section#contact .containerC .sec1 .social-media{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#contact .containerC .sec1 .social-media p{
+    font-size: 1.3rem;
+}
+section#contact .containerC .sec1 .social-media .icons{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+section#contact .containerC .sec1 .social-media .icons span{
+    background-color: #D9D9D9;
+    color: #0D7777;
+    border-radius: 30px;
+    font-size: 2rem;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+section#contact .containerC .sec1 .social-media .icons span:hover{
+    background-color: #0D7777;
+}
+section#contact .containerC .sec1 .social-media .icons span:hover a{
+    color: #fff;
+}
+section#contact .containerC .sec1 .social-media .icons span a{
+    color: #0D7777;
+}
+section#contact .containerC .sec2{
+    position: relative;
+}
+section#contact .containerC .sec2 img{
+    width: 450px;
+    height: 450px;    
+    z-index: -2;
+}
+section#contact .containerC .sec2 > div{
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+section#contact .containerC .sec2 div .box{
+    background-color: #fff;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+section#contact .containerC .sec2 div .email{
+    position: relative;
+    /* margin-bottom: 190px; */
+}
+section#contact .containerC .sec2 div .box div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+section#contact .containerC .sec2 div .box div .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0;
+}
+section#contact .containerC .sec2 div .box div .content h6{
+    font-weight: 800;
+}
+section#contact .containerC .sec2 div .box div .content p a{
+    color: #000;
+}
+section#contact .containerC .sec2 div .box div span{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 5px;
+    color: #0D7777;
+    font-size: 2rem;
+}
+section#contact .containerC .sec2 div .box  .action{
+    background-color: #0D7777;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    transition: .5s;
+}
+
+section#contact .containerC .sec2 div .box  .action a{
+    color: #fff;
+    transition: .5s;
+}
+section#contact .containerC .sec2 div .box  .action:hover a{
+    font-size: 1.4rem;
+}
+
+/* Extra Small (Mobile) - max 575px */
+@media (max-width: 575px) {
+    section#contact .containerC .sec{
+        width: 90%;
+    }
+    section#contact .containerC .sec2 img{
+    width: 400px;
+    height: 400px;    
+    }
+    
+}
+
+/* Small Devices (Mobile landscape / Small tablets) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    section#contact .containerC .sec{
+        width: 90%;
+    }
+    section#contact .containerC .sec2 img{
+    width: 400px;
+    height: 400px;    
+    }
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+   section#contact .containerC .sec2 img{
+    width: 400px;
+    height: 400px;    
+    }
+    section#contact .containerC .sec1 img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Large Devices (Laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra Large Devices (Large screens) - 1200px and up */
+@media (min-width: 1200px) {
+
+}
+
+/* end contact  */
+
+
+
+/* start footer  */
+section#footer{
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 30px 30px 0 0; 
+}
+section#footer .footerContent{
+    padding:10px 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+section#footer .footerContent .foo{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+section#footer .footerContent .links h6{
+    /* width: 100%; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0D7777;
+}
+section#footer .footerContent .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+section#footer .footerContent .links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    list-style-type: disc;
+}
+section#footer .footerContent .links ul  a{
+    color: #000;
+    transition: .5s;
+}
+section#footer .footerContent .links ul  a:hover{
+    color: #0D7777;
+}
+section#footer .footerContent .contact .icons{
+    display: flex;
+    gap: 10px;
+}
+section#footer .footerContent .contact .icons span{
+    color: #0D7777;
+    font-size: 1.6rem;
+    border: 1px solid #0D7777 ;
+    padding: 7px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .5s;
+}
+section#footer .footerContent .contact .icons span:hover{
+    background-color: #0D7777;
+    color: #fff;
+}
+section#footer .copyRight{
+    width: 100%;
+    background-color: #0D7777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Extra Small (Mobile) - max 575px */
+@media (max-width: 575px) {
+    section#footer .footerContent .foo{
+    width: 100%;
+}
+}
+
+/* Small Devices (Mobile landscape / Small tablets) - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    section#footer .footerContent .foo{
+    width: 100%;
+}
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large Devices (Laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra Large Devices (Large screens) - 1200px and up */
+@media (min-width: 1200px) {
+
+}
+
+/* end footer  */
+
+
+
