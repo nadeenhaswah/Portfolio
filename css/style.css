@@ -649,6 +649,7 @@ section#projects .projectsContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .projectsContainer .project:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
@@ -713,6 +714,7 @@ section#projects  .project .content .langs span{
     section#projects .projectsContainer .project{
     width: 100%;
     height: auto;
+    padding-bottom: 20px;
 }
 section#projects  .project  a{
     width: 40%;
