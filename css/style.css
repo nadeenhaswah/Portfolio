@@ -888,6 +888,25 @@ section#contact .containerC .sec2 div .box  .action{
     padding: 10px;
     color: #fff;
     transition: .5s;
+    animation: active infinite 1s ;
+    animation-fill-mode: both;
+}
+@keyframes active{
+    0%{
+        box-shadow: 0 0 10px 5px #0D7777;
+    }
+    30%{
+        box-shadow: 0 0 20px 5px  rgba(0, 0, 0, .5);
+    }
+    60%{
+        box-shadow: 0 0 30px 5px #0D7777;
+    }
+    80%{
+        box-shadow: 0 0 40px 5pxrgba(0, 0, 0, .5);
+    }
+    100%{
+        box-shadow: 0 0 50px 5px #0D7777;
+    }
 }
 
 section#contact .containerC .sec2 div .box  .action a{
