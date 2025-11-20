@@ -365,6 +365,7 @@ section#about .skills .skillsContainer .specificSkills li span{
 
 
 
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
 /* start experience  */
 section#experience h3 {
@@ -503,6 +504,8 @@ section#experience .education-experience div .containerE .box div .year{
 /* end experience  */
 
 
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+
 /* start Services */
 section#services{
     position: relative;
@@ -607,6 +610,9 @@ section#services .servicesContainer .service .desc{
 
 
 /* end Services */
+
+
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
 
 /* start projects */
@@ -740,6 +746,9 @@ section#projects  .project  a{
 /* end projects */
 
 
+
+
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
 
 /* start contact  */
