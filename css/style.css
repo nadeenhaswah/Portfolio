@@ -712,6 +712,7 @@ section#projects  .project .content .langs span{
 @media (max-width: 575px) {
     section#projects .projectsContainer .project{
     width: 100%;
+    height: auto;
 }
 section#projects  .project  a{
     width: 40%;
@@ -1030,9 +1031,16 @@ section#footer .footerContent .contact .icons span{
     text-align: center;
     border-radius: 50%;
     transition: .5s;
+    cursor: pointer;
 }
-section#footer .footerContent .contact .icons span:hover{
+section#footer .footerContent .contact .icons span a{
+    color: #0D7777;
+}
+section#footer .footerContent .contact .icons span:hover {
     background-color: #0D7777;
+    color: #fff;
+}
+section#footer .footerContent .contact .icons span:hover a{
     color: #fff;
 }
 section#footer .copyRight{
