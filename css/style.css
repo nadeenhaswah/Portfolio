@@ -135,7 +135,7 @@ div.homeSection .content .name{
 div.homeSection .content .position{
     width: 100%;
     font-size: 3.4rem;
-    /* animation: typing 1.6s steps(28) infinite alternate-reverse; */ 
+    /* animation: typing 1.6s steps(28) infinite alternate-reverse;  */
     overflow: hidden;
 }
 div.homeSection .content p.me{

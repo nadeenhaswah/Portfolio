@@ -29,11 +29,13 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/icon.svg">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Nadeen Haswah</title>
 </head>
 <body>
     <!-- start home & header  -->
-    <section id="home">
+    <section id="home"  data-aos="fade-in">
         <!-- <div class="container"> -->
                 <nav class="navbar  navbar-expand-lg navbar-light ">
                     <a class="navbar-brand" href="#home">
@@ -109,7 +111,7 @@
     <!-- end home & header  -->
     
     <!-- start about me  -->
-    <section id="about">
+    <section id="about"  data-aos="fade-in">
         <img src="images/aboutMeShape1.svg" class="star1" alt="">
         <img src="images/aboutMeShape2.svg" class="star2" alt="">
         <h3 class="bold main-font">More About Me</h3>
@@ -118,7 +120,7 @@
         <p class="me main-font">
             with hands-on experience in building responsive websites and web applications. I enjoy solving complex problems and bringing ideas to life through clean code and thoughtful design.
         </p>
-        <div class="skills main-font">
+        <div class="skills main-font"  data-aos="fade-in">
             <div class="skillsContainer">
                 <div class="skill main-font bold front-end">Frontend Skills</div>
                 <ul class="specificSkills">
@@ -148,12 +150,12 @@
     <!-- end about me  -->
     
     <!-- start experience -->
-    <section id="experience">
+    <section id="experience"  data-aos="fade-in">
         <h3 class="bold main-font">Education & Experience</h3>
         <h1 class=" bold main-font">My Academic <span class="text-main-color">& <br>
             Professional</span> Journy </h1>
 
-        <div class="education-experience">
+        <div class="education-experience"  data-aos="fade-in">
             <div class="education">
                 <h4>Education</h4>
                 <div class="containerE">
@@ -202,12 +204,12 @@
     <!-- end experience -->
 
     <!-- start services  -->
-    <section id="services">
+    <section id="services"  data-aos="fade-in">
         <img src="images/servicesShape1.svg" class="shape1" alt="">
         <img src="images/servicesShape2.svg" class="shape2" alt="">
         <h3 class="bold main-font">Services</h3>
         <h1 class=" bold main-font"> What I  <span class="text-main-color">Do</span> </h1>
-        <div class="servicesContainer">
+        <div class="servicesContainer"  data-aos="fade-in">
             <div class="service">
                 <span><i class="fa-solid fa-feather-pointed"></i></span>
                 <p class="title">Web Design</p>
@@ -242,13 +244,13 @@
     <!-- end services  -->
 
     <!-- start projects -->
-    <section id="projects">
+    <section id="projects"  data-aos="fade-in">
         <h3 class="bold main-font">Projects</h3>
         <h1 class=" bold main-font">
             A selection of the work I've built with passion.
         </h1>
 
-        <div class="projectsContainer">
+        <div class="projectsContainer"  data-aos="fade-in">
             <div class="project">
                 <img src="images/pro1.png" alt="">
                 <div class="content">
@@ -302,13 +304,13 @@
     <!-- end projects -->
 
     <!-- start contact -->
-    <section id="contact">
+    <section id="contact"  data-aos="fade-in">
         <h3 class="bold main-font">Contact</h3>
         <h1 class=" bold main-font">
             Let’s Build  <span class="text-main-color">Something <br>
             Great</span> Together
         </h1>
-        <div class="containerC">
+        <div class="containerC"  data-aos="fade-in">
             <div class="sec sec1">
                 <img src="images/contactNadeenPic.png" alt="" >
                 <div class="social-media">
@@ -350,7 +352,7 @@
     <!-- end contact -->
 
     <!-- start footer  -->
-    <section id="footer">
+    <section id="footer"  data-aos="fade-in">
         <div class="footerContent">
             <div class="foo logo">
                 <a class="navbar-brand" href="#home">
@@ -384,5 +386,11 @@
         </div>
     </section>
     <!-- end footer  -->
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
